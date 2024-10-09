@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.panel {
+  flex: 0.5;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* Media query for screens smaller than 768px (phones and small tablets) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .panel {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .panel h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Media query for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+  .panel h3 {
+    font-size: 1.8rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}

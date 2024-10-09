@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/expanding-cards-react/static/css/main.4c12db63.css",
+    "main.js": "/expanding-cards-react/static/js/main.51f83e8e.js",
+    "index.html": "/expanding-cards-react/index.html",
+    "main.4c12db63.css.map": "/expanding-cards-react/static/css/main.4c12db63.css.map",
+    "main.51f83e8e.js.map": "/expanding-cards-react/static/js/main.51f83e8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c12db63.css",
+    "static/js/main.51f83e8e.js"
+  ]
+}
